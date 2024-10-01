@@ -1,4 +1,8 @@
 /* RESET */
+html {
+    height: 100vh;
+}
+
 * {
     box-sizing: border-box;
     margin: 0 auto;
@@ -26,14 +30,14 @@
     flex-wrap: wrap;
     background-color: black;
     position: relative;
+    height: 100vh;
 }
 
 .upgrade {
     position: fixed;
-    position: absolute;
-    top: 0; left: 0;
+    top: 0;
     z-index: 1;
-    width: 100%;
+    width: 1440px;
     height: 90px;
     opacity: 70%;
     background-color: #000000;
@@ -41,7 +45,7 @@
 
 .library {
     flex-grow: 1;
-    height: 1110px;
+    height: 100vh;
     background-color: var(--library-color);
 
     overflow:auto;
@@ -50,12 +54,26 @@
 
 .sidebar {
     width: 230px;
-    background-color: #000000
-    
+    background-color: #000000;   
 }
 
 .navbar {
     width: 1440px;
     height: 90px;
     background-color: var(--bar-color);
+    position: fixed;
+    bottom: 0;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:551,99) {
+    .sidebar {
+        width: 50px;
+    }
 }

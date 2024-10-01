@@ -47,7 +47,6 @@ html {
     flex-grow: 1;
     height: 100vh;
     background-color: var(--library-color);
-
     overflow:auto;
     justify-content: flex-start;
 }
@@ -68,11 +67,12 @@ html {
 body {
     position: relative;
     height: 100vh;
+    width: 1440px;
 }
 
 /* RESPONSIVE */
 
-@media (max-width:551,99) {
+@media (max-width:551.99) {
     .sidebar {
         width: 50px;
     }

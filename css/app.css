@@ -192,8 +192,9 @@ img {
 }
 
 .books {
-    font-size: 244px;
-    padding: 10px
+    font-size: 24px;
+    padding: 5px 10px 0 0;
+    
 }
 
 .sidebar__menu {
@@ -203,6 +204,27 @@ img {
 .sidebar__menu i {
     font-size: 24px;
     padding-right: 10px;
+}
+
+.plus__icon {
+    width: 35px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    color: black;
+    line-height: 35px;
+    text-align: center;
+}
+
+.playlist__create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 /* RESPONSIVE */

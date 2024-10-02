@@ -124,7 +124,7 @@ img {
 
 .progres_bar {
     height: 2px;
-    min-width: 120px;
+    min-width: 100px;
     background-color: gray;
     width: 45%;
     
@@ -233,7 +233,7 @@ img {
 }
 
 .user__img {
-    width: 30px;
+    width: 28px;
     aspect-ratio: 1/1;
     background-color: #808080;
     border-radius: 50%;
@@ -248,6 +248,36 @@ img {
 
 .user {
     margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.user p {
+    color: var(--menu-font-color);
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    color: var(--menu-font-color);
+}
+
+
+/* MAIN */
+
+.upper__menu {
+    margin-top: 94px;
+    color: var(--menu-font-color);
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+.upper__menu a {
+    background-color: transparent;
+    font-weight: bold;
+    color: var(--menu-font-color);
+    font-size: 18px;
 }
 
 
@@ -265,5 +295,9 @@ img {
     }
     .app__logo {
         display: none;
-    }  
+    }
+    
+    .username {
+        display: none;
+    }
 }

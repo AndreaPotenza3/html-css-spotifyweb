@@ -69,7 +69,8 @@ img {
 .sidebar {
     width: 230px;
     background-color: #000000;
-    flex-shrink: 0;   
+    flex-shrink: 0;
+    padding: 20px 20px;   
 }
 
 .player {
@@ -163,6 +164,45 @@ img {
     object-position: center;
     display: block;
     flex-shrink: 0;
+}
+
+/* SIDEBAR */
+
+.app__title {
+    color: white;
+    margin-bottom: 26px;
+}
+
+.app__title span {
+    font-size: 28px;
+    vertical-align: 1px;
+
+}
+
+.app__title i {
+    font-size: 34px;
+}
+
+.sidebar__top {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+
+}
+
+.books {
+    font-size: 244px;
+    padding: 10px
+}
+
+.sidebar__menu {
+    font-size: 14px;
+}
+
+.sidebar__menu i {
+    font-size: 24px;
+    padding-right: 10px;
 }
 
 /* RESPONSIVE */

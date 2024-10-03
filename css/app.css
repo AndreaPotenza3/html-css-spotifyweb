@@ -16,6 +16,8 @@ html {
     --library-color: #141922;
     --bar-color: #282828;
     --menu-font-color: #707070;
+    --padding: 10px;
+    --brand-color: #ADFF2F;
 
 }
 
@@ -188,7 +190,8 @@ img {
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 12px
+    gap: 12px;
+    position: relative;
 
 }
 
@@ -207,6 +210,7 @@ img {
     display: flex;
     align-items: center;
     gap: 8px;
+
 }
 
 .sidebar__menu img {
@@ -299,6 +303,21 @@ img {
     padding-top: 15px;
 }
 
+.logo__sm {
+    display: none;
+    width: 26px;
+    margin-left: 4px;
+}
+.sidebar__menu.home::before {
+    position: absolute;
+    content: '';
+    background-color: 3px solid var(--brand-color);
+    height: 100%;
+    width: 4px;
+    top: 0;
+    left: 0;
+}
+
 
 /* MAIN */
 
@@ -355,11 +374,14 @@ img {
 }
 
 
+
+
 /* RESPONSIVE */
 
 @media (max-width:575.98px) {
     .sidebar {
         width: 50px;
+        padding: 20px 10px;
     }
     .sidebar__menu strong{
         display: none;
@@ -367,12 +389,12 @@ img {
     .menu__list {
         display: none;
     }
-    .app__logo {
-        display: none;
-    }
-    
     .username {
         display: none;
+    }
+
+    .user .user__info {
+        border: none;
     }
 
     .playlist-title {
@@ -382,4 +404,14 @@ img {
     .app__download {
         display: none;
     }
+
+    .logo__sm {
+        display: block;
+        width: 25px;
+    }
+
+    .logo__lg {
+        display: none;
+    }
+
 }

@@ -325,6 +325,7 @@ img {
     padding: 0 18px;
     font-size: 18px;
     overflow: auto;
+    position: relative;
 
 }
 
@@ -334,6 +335,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 22px;
+    flex-wrap: wrap;
 }
 
 .upper__menu a {
@@ -362,6 +364,8 @@ img {
 .card {
     color: white;
     text-align: center;
+    width: 100%
+    flex-shrink: 0;
 }
 
 .cover {
@@ -392,6 +396,33 @@ img {
 
 .cover.round-cover {
     border-radius: 50%;
+}
+
+
+/* UPGRADE */
+
+.upgrade {
+    background-color: #000000;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.upgrade__btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 999px;
+    padding: 15px 42px;
+    margin-left: auto;
+    font-size: 10px;
+}
+
+.upgrade__cont {
+    margin-right: auto;
 }
 
 

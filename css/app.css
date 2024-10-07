@@ -326,17 +326,18 @@ img {
     font-size: 18px;
     overflow: auto;
     position: relative;
-
 }
 
 .upper__menu {
-    margin-top: 94px;
     color: var(--menu-font-color);
     display: flex;
     justify-content: center;
     gap: 22px;
     flex-wrap: wrap;
+    margin-top: 94px;
 }
+
+
 
 .upper__menu a {
     background-color: transparent;
@@ -408,7 +409,8 @@ img {
     top: 0;
     right: 0;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .upgrade__btn {
@@ -421,8 +423,15 @@ img {
     font-size: 10px;
 }
 
+.upgrade__btn:hover {
+    transform: scale(1.1);
+}
+
 .upgrade__cont {
-    margin-right: auto;
+    display: flex;
+    justify-content: flex-end
+    padding 20px;
+
 }
 
 
